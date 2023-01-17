@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+
+    <title>Encriptador</title>
+</head>
+
+<body>
+    
+    <header>
+        <img src="imagenes/Logo.png" alt="Logo de Alura" class="logo">
+    </header>
+  
+    <main>
+        <section>
+            <textarea class="text-area" id="palabra" cols="30" rows="10" placeholder="Ingrese el Texto Aqui"></textarea>
+            <div>
+                <h6 class="informacion"><img src="imagenes/Vector.png"> Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button onclick="validar()" class="btn-encriptar">Encriptar!</button>
+                <button onclick="desencriptar()" class="btn-desencriptar">Desencriptar!</button>         
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" id="resultado" cols="20" rows="10"></textarea>
+            <div>
+                <p class="mensaje1" id="mensaje1">Ningún mensaje fue encontrado</p>
+                <p class="mensaje2" id="mensaje2">Ingrese el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div>                                       
+                <button onclick="copiar()" class="copiar" id="copiar" style="display: none;">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy Copyright Jimmy Vargas | Oracle + Alura - 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+    
