@@ -31,8 +31,7 @@ main{
 .text-area{
     border: none;
     color: #0A3871;
-    margin-top: 20px;
-    text-transform: lowercase;
+    margin-top: 20px;    
     width: 653px;
     height: 294px;
 }
