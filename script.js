@@ -2,9 +2,9 @@
 
     function validar() {
         var palabras = document.getElementById("palabra").value;
-        var regex = /^[a-zA-Z0-9 ]+$/;
+        var regex = /^[a-z0-9 ]+$/;
             if(!palabras.match(regex)) {
-                alert("Por favor, ingrese letras sin acentos o caracteres especiales.");
+                alert("Por favor, ingrese letras en Minúscula, sin acentos o caracteres especiales.");
                 document.getElementById("palabra").value = "";                
             } else{
                 encriptar();
